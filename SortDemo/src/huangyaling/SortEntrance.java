@@ -17,11 +17,12 @@ public class SortEntrance {
 	private final int MergeSort = 7;
 	
 	private String input;
+	private static int[] test;
 	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		DataSource.initDate();
+		test = DataSource.initDate();
 		SortEntrance sortEntrance = new SortEntrance();
 		sortEntrance.userInput();
 	}
@@ -43,18 +44,27 @@ public class SortEntrance {
 			
 			switch(userSelect){
 			case BubbleSort:
+				System.out.println("冒泡排序的过程：");
+				BubbleSort bubble = new BubbleSort();
+				bubble.TimeCount(test);
 				break;
 			case QuickSort:
+				System.out.println("快速排序的过程：");
 				break;
 			case DirectSelectSort:
+				System.out.println("直接选择的过程：");
 				break;
 			case HeapSort:
+				System.out.println("堆排序的过程：");
 				break;
 			case DirectInsertSort:
+				System.out.println("直接插入排序的过程：");
 				break;
 			case HillSort:
+				System.out.println("希尔排序的过程：");
 				break;
 			case MergeSort:
+				System.out.println("合并排序的过程：");
 				break;
 			default:			
 				break;

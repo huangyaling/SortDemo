@@ -11,21 +11,24 @@ import java.util.Scanner;
 
 public class DataSource {
 	
-	public static List list = new ArrayList();
+	//public static Int[] list = new ArrayList();
 	
-	public static List<ArrayList> initDate(){
+	public static int[] initDate(){
 		System.out.println("输入需要排序的序列，以空格隔开：");
+		List<Integer> list = new ArrayList<Integer>();
 		Scanner scanner = new Scanner(System.in);
-		String[] datas = scanner.nextLine().split(" ");
-		for(String data:datas){
-			try{
-				int i = Integer.valueOf(data);
-			}catch(Exception e){
-				System.out.println("Error Input!!!");
-			}			
-			list.add(data);	
+		while(scanner.hasNext()){
+			int str = scanner.nextInt();
+			if(str==-1){
+				break;			
+			}
+			list.add(str);
 		}
-		System.out.println(list);
-		return list;		
+		
+		int[] arr = new int[list.size()];
+		for(int i = 0;i<arr.length;i++){
+			arr[i] = list.get(i);
+		}		
+		return arr;		
 	}
 }
