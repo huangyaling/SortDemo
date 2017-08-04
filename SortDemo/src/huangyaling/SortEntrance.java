@@ -50,9 +50,13 @@ public class SortEntrance {
 				break;
 			case QuickSort:
 				System.out.println("快速排序的过程：");
+				QuickSort quick = new QuickSort();
+				quick.TimeCount(test);
 				break;
 			case DirectSelectSort:
 				System.out.println("直接选择的过程：");
+				DirectSelectSort directSelect = new DirectSelectSort();
+				directSelect.TimeCount(test);
 				break;
 			case HeapSort:
 				System.out.println("堆排序的过程：");

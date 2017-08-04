@@ -20,7 +20,7 @@ public class DataSource {
 		while(scanner.hasNext()){
 			int str = scanner.nextInt();
 			if(str==-1){
-				break;			
+				break;
 			}
 			list.add(str);
 		}
