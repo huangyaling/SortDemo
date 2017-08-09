@@ -60,15 +60,23 @@ public class SortEntrance {
 				break;
 			case HeapSort:
 				System.out.println("堆排序的过程：");
+				HeapSort heapSort = new HeapSort();
+				heapSort.TimeCount(test);
 				break;
 			case DirectInsertSort:
 				System.out.println("直接插入排序的过程：");
+				DirectInsertSort directInsert = new DirectInsertSort();
+				directInsert.TimeCount(test);
 				break;
 			case HillSort:
 				System.out.println("希尔排序的过程：");
+				HillSort hillSort = new HillSort();
+				hillSort.TimeCount(test);
 				break;
 			case MergeSort:
 				System.out.println("合并排序的过程：");
+				MergeSort mergeSort = new MergeSort();
+				mergeSort.TimeCount(test);
 				break;
 			default:			
 				break;

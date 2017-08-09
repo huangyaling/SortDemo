@@ -1,5 +1,7 @@
 package huangyaling;
 
+import java.util.Arrays;
+
 /**
  * ц╟ещеепР
  * 
@@ -19,9 +21,7 @@ public class BubbleSort {
 				}
 			}			
 		}
-		for (int n = 0; n < arr.length; n++) {
-			System.out.print(arr[n] + ",");
-		}
+		System.out.println("OutPut:"+Arrays.toString(arr));
 	}
 	
 	public void TimeCount(int[] arr){

@@ -1,4 +1,7 @@
 package huangyaling;
+
+import java.util.Arrays;
+
 /**
  * 快速排序
  * @author huangyaling
@@ -37,10 +40,7 @@ public class QuickSort {
 		if(end>high){
 			quicksort(arr,end+1,high);//右边序列，从关键值索引+1到最后一个
 		}
-		
-		for (int n = 0; n < arr.length; n++) {
-			System.out.print(arr[n] + ",");
-		}		
+		System.out.println("OutPut:"+Arrays.toString(arr));	
 	}
 	
 	public void TimeCount(int[] arr){
