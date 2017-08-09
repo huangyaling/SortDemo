@@ -43,7 +43,7 @@ public class QuickSort {
 		System.out.println("OutPut:"+Arrays.toString(arr));	
 	}
 	
-	public void TimeCount(int[] arr){
+	public void sortResult(int[] arr){
 		long startTime=System.currentTimeMillis();
 		quicksort(arr,0,arr.length-1);
 		long endTime=System.currentTimeMillis();

@@ -61,7 +61,7 @@ public class HeapSort {
 		System.out.println("Output:"+Arrays.toString(A));
 	}
 	
-	public void TimeCount(int[] arr){
+	public void sortResult(int[] arr){
 		long startTime=System.currentTimeMillis();
 		heapSort(arr);
 		long endTime=System.currentTimeMillis();

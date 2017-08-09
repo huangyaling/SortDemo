@@ -30,7 +30,7 @@ public class HillSort {
 		System.out.println("OutPut:"+Arrays.toString(arr));	
 	}
 	
-	public void TimeCount(int[] arr){
+	public void sortResult(int[] arr){
 		long startTime=System.currentTimeMillis();
 		hillSort(arr);
 		long endTime=System.currentTimeMillis();

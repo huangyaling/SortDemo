@@ -46,37 +46,37 @@ public class SortEntrance {
 			case BubbleSort:
 				System.out.println("冒泡排序的过程：");
 				BubbleSort bubble = new BubbleSort();
-				bubble.TimeCount(test);
+				bubble.sortResult(test);
 				break;
 			case QuickSort:
 				System.out.println("快速排序的过程：");
 				QuickSort quick = new QuickSort();
-				quick.TimeCount(test);
+				quick.sortResult(test);
 				break;
 			case DirectSelectSort:
 				System.out.println("直接选择的过程：");
 				DirectSelectSort directSelect = new DirectSelectSort();
-				directSelect.TimeCount(test);
+				directSelect.sortResult(test);
 				break;
 			case HeapSort:
 				System.out.println("堆排序的过程：");
 				HeapSort heapSort = new HeapSort();
-				heapSort.TimeCount(test);
+				heapSort.sortResult(test);
 				break;
 			case DirectInsertSort:
 				System.out.println("直接插入排序的过程：");
 				DirectInsertSort directInsert = new DirectInsertSort();
-				directInsert.TimeCount(test);
+				directInsert.sortResult(test);
 				break;
 			case HillSort:
 				System.out.println("希尔排序的过程：");
 				HillSort hillSort = new HillSort();
-				hillSort.TimeCount(test);
+				hillSort.sortResult(test);
 				break;
 			case MergeSort:
 				System.out.println("合并排序的过程：");
 				MergeSort mergeSort = new MergeSort();
-				mergeSort.TimeCount(test);
+				mergeSort.sortResult(test);
 				break;
 			default:			
 				break;

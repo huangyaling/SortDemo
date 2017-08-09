@@ -54,7 +54,7 @@ public class MergeSort {
 		//System.out.println("Output"+Arrays.toString(arr));	
 	}
 	
-	public void TimeCount(int[] arr){
+	public void sortResult(int[] arr){
 		long startTime=System.currentTimeMillis();
 		mergeSort(arr,0,arr.length-1);
 		long endTime=System.currentTimeMillis();
